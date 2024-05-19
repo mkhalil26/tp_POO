@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="505.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AgendaController">
+   <children>
+      <DatePicker layoutX="163.0" layoutY="50.0" prefHeight="25.0" prefWidth="273.0" promptText="Choisissez la date de rendz-vous" />
+      <ComboBox fx:id="hours" layoutX="152.0" layoutY="117.0" prefHeight="25.0" prefWidth="71.0" />
+      <ComboBox fx:id="minutes" layoutX="264.0" layoutY="117.0" prefHeight="25.0" prefWidth="71.0" />
+      <ComboBox fx:id="time" layoutX="368.0" layoutY="117.0" prefHeight="25.0" prefWidth="71.0" />
+      <AnchorPane fx:id="Mypan" layoutX="94.0" layoutY="239.0" prefHeight="241.0" prefWidth="411.0" style="-fx-border-color: black;">
+         <children>
+            <VBox fx:id="Myvbox" layoutX="79.0" layoutY="14.0" prefHeight="200.0" prefWidth="253.0" />
+         </children>
+      </AnchorPane>
+      <ChoiceBox fx:id="MychoiceBox" layoutX="404.0" layoutY="184.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label layoutX="94.0" layoutY="187.0" text="Veuillez choisir le type de rendez-vous     :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
